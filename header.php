@@ -8,7 +8,7 @@ $cookie_expiration = time() + 60 * 60 * 24 * 365 * 10;
 
 // codice per impostare il cookie al cambio lingua
 if (!isset($_COOKIE['language'])) {
-    setcookie('language', 'it', $cookie_expiration);
+    setcookie('language', 'it', $cookie_expiration, "/");
     $language = 'it';
 } else {
     $language = $_COOKIE['language'];
